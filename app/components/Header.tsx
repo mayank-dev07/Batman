@@ -1,19 +1,12 @@
 "use client";
-import { Menu } from "lucide-react";
-import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   const logoButtonRef = useRef<HTMLButtonElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const navLinksRef = useRef<HTMLDivElement>(null);
-  const homeRef = useRef<HTMLAnchorElement>(null);
-  const aboutRef = useRef<HTMLAnchorElement>(null);
-  const contactRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     const tl = gsap.timeline();
